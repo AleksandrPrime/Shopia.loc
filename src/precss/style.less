@@ -1,0 +1,130 @@
+@import "normalize.less";
+@import "fonts.less";
+
+.font-face("../fonts/Lato-Regular/"; "Lato-Regular"; "Lato-r");
+.font-face("../fonts/PlayfairDisplay-Regular/"; "PlayfairDisplay-Regular"; "PFDR");
+
+body,html{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-top {
+  box-sizing:border-box;
+  display: flex;
+  justify-content: space-between;
+  background: #f2f2f2;
+  padding: 0 ~"calc(50% - 645px)";
+  overflow: hidden;
+}
+
+.header-top__left {
+  display: flex;
+  align-items: center;
+}
+
+.header-top__phone {
+  width: 89px;
+  color: #393939;
+  font-family: Lato-r;
+  font-size: 11px;
+  font-weight: 400;
+
+}
+
+.header-top__nav {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+    &:last-child{
+      border-right: none;
+    }
+}
+
+.header-top__list{
+  padding-left: 50px;
+}
+
+.header-top__list:not(:last-child) {
+  border-right: 1px solid black;
+  padding-right: 50px;
+}
+
+.header-top__links {
+  color: #393939;
+  font-family: Lato-r;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.header-bot {
+  min-height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 ~"calc(50% - 645px)";
+}
+
+.header-bot__left {
+}
+
+.header-bot__nav {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.header-bot__list:not(:last-child) {
+  margin-right: 15px;
+}
+
+.header-bot__links {
+  font-size: 18px;
+  font-family: PFDR;
+  font-style: italic;
+  color: #000000;
+  font-weight: bold;
+}
+
+.header-bot__center {
+  margin-left: 40px;
+}
+
+.header-bot__logo {
+}
+
+.header-bot__right {
+  display: flex;
+ /* max-width: 325px;
+  width: 100%;*/
+  flex-basis: 325px;
+  justify-content: space-between;
+}
+
+.header-bot__social {
+  max-width: 180px;
+}
+
+.header-bot__icon {
+  width: 34px;
+  height: 34px;
+}
+
+.header-bot__currency {
+  width: 91px;
+  background: black;
+  color: white;
+}
+
+.header-bot__currency-item {
+}
+
